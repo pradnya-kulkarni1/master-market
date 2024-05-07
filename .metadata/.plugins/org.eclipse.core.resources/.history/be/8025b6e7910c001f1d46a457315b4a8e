@@ -1,0 +1,5 @@
+package com.mastersmarket.model;
+
+public class Product {
+
+}

@@ -1,0 +1,20 @@
+package com.mastersmarket.model;
+
+import java.sql.Date;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Request {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	@ManyToOne
+	@JoinColumn(name ="CustomerId")
+	public Customer customer;
+	
+	
+}

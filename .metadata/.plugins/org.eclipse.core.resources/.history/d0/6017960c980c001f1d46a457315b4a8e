@@ -1,0 +1,5 @@
+package com.mastersmarket.db;
+
+public interface SupervisorRepo {
+
+}

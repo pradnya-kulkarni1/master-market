@@ -1,0 +1,5 @@
+package com.mastersmarket.controller;
+
+public class CustomerController {
+
+}

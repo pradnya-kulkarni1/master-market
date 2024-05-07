@@ -1,0 +1,26 @@
+package com.mastersmarket.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.mastersmarket.db.CustomerRepo;
+import com.mastersmarket.model.Customer;
+
+@CrossOrigin
+@RestController
+@RequestMapping("api/customers")
+public class CustomerController {
+	
+	@Autowired
+	
+	private CustomerRepo customerRepo;
+	
+	@GetMapping("/")
+	public List<Customer> getAllCustomers()
+	{
+		return customerRepo.findAll();
+	}
+
+}
